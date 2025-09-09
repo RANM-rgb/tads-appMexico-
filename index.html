@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bandera de México</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Bandera de México</h1>
+
+    <section class="bandera">
+      <!-- Verde -->
+      <div class="franja verde" id="franja-verde">
+        <div class="info">
+          <div class="label">Esperanza</div>
+          <div class="hex" id="hex-verde">#009900</div>
+        </div>
+        <input type="range" id="slider-verde" min="0" max="255" value="153">
+      </div>
+
+      <!-- Blanco -->
+      <div class="franja blanco" id="franja-blanco">
+        <div class="info">
+          <div class="label">Unidad</div>
+          <div class="hex">#FFFFFF</div>
+        </div>
+      </div>
+
+      <!-- Rojo -->
+      <div class="franja rojo" id="franja-rojo">
+        <div class="info">
+          <div class="label">Sangre de nuestros héroes nacionales</div>
+          <div class="hex" id="hex-rojo">#900000</div>
+        </div>
+        <input type="range" id="slider-rojo" min="0" max="255" value="144">
+      </div>
+    </section>
+
+    <button id="resetBtn">Resetear colores</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
